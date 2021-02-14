@@ -36,6 +36,7 @@ def scrape():
     # .update(query_parameter, data, options "upsert=True" means that we create a new document)
     mars.update({}, mars_data, upsert=True)
     #add a redirect after successfully scraping the data, navigate our page back to /
+    #return "Scraping Sucessful!"
     return redirect('/', code=302)
 
 # Tell Flask to run
